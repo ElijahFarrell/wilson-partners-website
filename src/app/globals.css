@@ -1,0 +1,188 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #0a0f18;
+  --ink-soft: #1a2332;
+  --ink-muted: #3d4f66;
+  --parchment: #f6f1e8;
+  --parchment-deep: #ebe4d6;
+  --cream: #faf7f2;
+  --gold: #c4a035;
+  --gold-deep: #8b6914;
+  --gold-light: #e8d5a0;
+  --header-height: 4.5rem;
+  --shadow-soft: 0 4px 24px rgba(10, 15, 24, 0.05);
+  --shadow-elevated: 0 16px 64px rgba(10, 15, 24, 0.09);
+  --shadow-panel: 0 24px 80px rgba(10, 15, 24, 0.11);
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-muted: var(--ink-muted);
+  --color-parchment: var(--parchment);
+  --color-parchment-deep: var(--parchment-deep);
+  --color-cream: var(--cream);
+  --color-gold: var(--gold);
+  --color-gold-deep: var(--gold-deep);
+  --color-gold-light: var(--gold-light);
+  --font-display: var(--font-cormorant);
+  --font-body: var(--font-literata);
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: rgba(196, 160, 53, 0.2);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: var(--font-literata), Georgia, serif;
+    touch-action: manipulation;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: var(--gold-light);
+    color: var(--ink);
+  }
+}
+
+.font-display {
+  font-family: var(--font-cormorant), "Times New Roman", serif;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.text-pretty {
+  text-wrap: pretty;
+}
+
+/* Ambient hero mesh — depth without choppy section breaks */
+.hero-mesh {
+  background:
+    radial-gradient(ellipse 80% 60% at 70% 20%, rgba(196, 160, 53, 0.14), transparent 55%),
+    radial-gradient(ellipse 60% 50% at 10% 80%, rgba(255, 255, 255, 0.04), transparent 50%),
+    linear-gradient(165deg, #0a0f18 0%, #121a28 45%, #0d1520 100%);
+}
+
+.grain::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 128px 128px;
+}
+
+.panel-elevated {
+  box-shadow: var(--shadow-elevated);
+}
+
+.panel-float {
+  box-shadow: var(--shadow-panel);
+}
+
+.card-soft {
+  box-shadow: var(--shadow-soft);
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  transform-origin: center bottom;
+}
+
+.card-soft:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-elevated);
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(1.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-rise-in {
+  animation: rise-in 0.85s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-delay-1 { animation-delay: 0.12s; }
+.animate-delay-2 { animation-delay: 0.24s; }
+.animate-delay-3 { animation-delay: 0.38s; }
+.animate-delay-4 { animation-delay: 0.52s; }
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -100%;
+  z-index: 100;
+  padding: 0.625rem 1rem;
+  background: var(--ink);
+  color: var(--cream);
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 0.25rem;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus-visible {
+  top: 1rem;
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+.form-input {
+  background-color: var(--cream);
+  color: var(--ink);
+  border: 1px solid rgba(10, 15, 24, 0.08);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.form-input:focus-visible {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(196, 160, 53, 0.22);
+}
+
+/* Soft gradient band — replaces hard section borders */
+.bg-band-warm {
+  background: linear-gradient(
+    180deg,
+    var(--cream) 0%,
+    rgba(246, 241, 232, 0.55) 50%,
+    var(--cream) 100%
+  );
+}
+
+.cta-glow {
+  background:
+    radial-gradient(ellipse 70% 80% at 50% 120%, rgba(196, 160, 53, 0.18), transparent 60%),
+    linear-gradient(180deg, #0a0f18 0%, #0d1520 100%);
+}
