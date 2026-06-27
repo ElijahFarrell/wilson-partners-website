@@ -1,14 +1,15 @@
 export const site = {
   name: "Wilson Partners",
   legalName: "Wilson Partners Inc.",
-  tagline: "AI for humans. Humans for AI.",
+  tagline: "Bold Strategy. Real Presence. Lasting Impact.",
+  subtagline: "AI for humans. Humans for AI.",
   description:
-    "Thought leadership for government and private-sector senior leaders committed to value-based leadership — translating AI capability into sound strategy, trustworthy governance, and practical workforce competency.",
+    "We help government and enterprise leaders turn their toughest challenges into momentum — and good intentions into measurable results.",
   location: "Washington, D.C.",
   email: "ygibbons@thewilsonpartners.com",
-  altEmail: "ygibbons@inclusionleadership.com",
   phone: "(202) 555-0140",
   website: "https://inclusionleadership.org/",
+  foundationUrl: "https://www.wfpas.org",
 } as const;
 
 export const navLinks = [
@@ -21,27 +22,48 @@ export const navLinks = [
 export const credibilityMetrics = [
   { value: "75+", label: "Federal agencies & organizations" },
   { value: "2014", label: "Founded" },
-  { value: "7", label: "Integrated practice areas" },
+  { value: "7", label: "Core capabilities" },
 ] as const;
 
 export const clientSectors = [
-  "Department of War",
   "Office of Personnel Management",
+  "Department of Energy",
   "NASA",
   "Department of Commerce",
-  "Department of Energy",
-  "NIH · ODNI · USAID · GAO",
+  "Government Accountability Office",
+  "ODNI · Secret Service · NIH · USAID",
+] as const;
+
+export const firmStory = {
+  headline: "A strategic consulting firm for leaders who refuse to settle.",
+  intro:
+    "Wilson Partners works shoulder-to-shoulder with senior leaders across government and the private sector to solve their hardest problems — aligning strategy, culture, and people around what actually moves the needle.",
+  closing:
+    "Grounded in evidence and built on trust, our work makes institutions stronger by making their leaders stronger. The result: clearer decisions, sharper teams, and change that lasts.",
+} as const;
+
+export const philosophy = {
+  title: "Leadership is a craft, not a title.",
+  body: "The strongest organizations are built by leaders who stay grounded under pressure, tell the truth, and make room for every voice. Strategy without people is just paperwork — so we start with the human and build outward. When leaders grow, institutions follow.",
+} as const;
+
+export const coreValues = [
+  { title: "Integrity", description: "We tell the truth — especially when it's hard to hear." },
+  { title: "Excellence", description: "Good enough never is. We set the bar high and clear it." },
+  { title: "Inclusion", description: "Every voice in the room makes the decision sharper." },
+  { title: "Courage", description: "We ask the hard questions and help leaders answer them." },
+  { title: "Impact", description: "We measure success by what changes — not what's delivered." },
+  { title: "Trust", description: "We earn it slowly, protect it fiercely, and never take it for granted." },
 ] as const;
 
 export const practiceAreas = [
   {
     id: "research-analytics",
-    title: "Research, Assessment & AI-Enabled Analytics",
-    shortTitle: "Research & Analytics",
-    summary:
-      "Large-scale data analysis, survey methodology, and AI-enabled pattern recognition — with rigorous attention to bias, explainability, and action.",
+    title: "Research, Assessment & Evaluation",
+    shortTitle: "Research & Evaluation",
+    summary: "We turn data into direction — research that shows what's really happening and what to do next.",
     description:
-      "Our Subject Matter Experts critically review and analyze large-scale data reports and trends, offer recommendations for resolving critical issues, and advance mission success. We bring fluency in machine learning, natural-language analysis, and generative AI to surface patterns at scale, while examining model accuracy, bias, and explainability. Our SMEs are trained as academicians in sociology, psychology, political science, management science, and law.",
+      "Our Subject Matter Experts critically review and analyze large-scale data reports and trends, offer recommendations for resolving critical issues, and advance mission success. We bring fluency in modern AI and data science — applying machine learning, natural-language analysis, and generative AI to surface patterns at scale, while rigorously examining model accuracy, bias, and explainability.",
     highlights: [
       "Survey methodology, data collection, analysis, and reporting",
       "AI readiness assessment and tool trustworthiness evaluation",
@@ -51,42 +73,39 @@ export const practiceAreas = [
   },
   {
     id: "leadership-development",
-    title: "Leadership & Professional Development in the AI Era",
+    title: "Leadership & Professional Development",
     shortTitle: "Leadership Development",
-    summary:
-      "Build AI-capable leaders through competency models, experiential learning, coaching, and succession-ready pipelines.",
+    summary: "We build leaders who can — sharper judgment, presence, and the courage to lead change.",
     description:
-      "We advise emerging and advancing leaders on creating policies and procedures that lead to sustainable change. We help leaders build AI competency — from foundational literacy to the critical judgment required to deploy AI ethically and effectively. Our development models cultivate understanding of how AI works and where it fails, safeguarding human agency, recognizing algorithmic bias, and modeling lifelong learning.",
+      "We advise emerging and advancing leaders on creating policies and procedures that lead to sustainable change. We help leaders build AI competency — from foundational literacy to the critical judgment required to deploy AI ethically and effectively — through competency models, experiential learning, coaching, and succession-ready pipelines.",
     highlights: [
-      "Competency models from foundational to advanced AI leadership",
-      "Experiential learning embedded in real work — not classroom alone",
+      "Competency models from foundational to advanced leadership",
+      "Experiential learning embedded in real work",
       "Coaching, IDPs, and measurable growth assessment",
       "Succession frameworks that reduce key-person dependence",
     ],
   },
   {
     id: "strategy-implementation",
-    title: "Strategic Planning, AI Strategy & Evaluation",
-    shortTitle: "Strategy & Evaluation",
-    summary:
-      "Evidence-based roadmaps, cost–benefit analysis, and implementation planning aligned to organizational mission.",
+    title: "Strategic Planning & Implementation",
+    shortTitle: "Strategy & Implementation",
+    summary: "Great plans that actually ship. We help you choose what matters, then deliver it.",
     description:
-      "Our work in strategic planning, implementation, and evaluation is built on a wealth of experience advising, writing, and implementing successful strategic plans. We help leaders weigh the value of AI against other priorities through evidence-based cost–benefit analysis, design AI adoption roadmaps, and build the enabling conditions — data, infrastructure, policy, and workforce — that make adoption succeed.",
+      "Our work in strategic planning, implementation, and evaluation is built on a wealth of experience advising, writing, and implementing successful strategic plans. We help leaders weigh priorities through evidence-based analysis, design adoption roadmaps, and build the enabling conditions — data, infrastructure, policy, and workforce — that make change succeed.",
     highlights: [
       "AI adoption roadmaps and phased implementation plans",
       "Cost–benefit analysis and priority alignment",
       "Enabling conditions: data, infrastructure, policy, workforce",
-      "Visionary planning recognized for sustainable results",
+      "From plan to progress with measures that keep you on track",
     ],
   },
   {
     id: "ai-governance",
-    title: "AI Governance & Responsible AI",
-    shortTitle: "AI Governance",
-    summary:
-      "Governance frameworks for safe, lawful, human-accountable AI across the full lifecycle.",
+    title: "Governance & Accountability",
+    shortTitle: "Governance",
+    summary: "Trust, by design — clear accountability that earns confidence inside and out.",
     description:
-      "WP advises leaders on the governance frameworks needed to use AI safely, lawfully, and in the public interest. We help organizations validate trustworthiness before deployment at scale, establish human accountability for AI-assisted decisions, and embed an ethics-by-design standard throughout the AI life cycle — addressing security, bias, privacy, explainability, and environmental impact.",
+      "Wilson Partners advises leaders on the governance frameworks needed to use AI safely, lawfully, and in the public interest. We help organizations validate trustworthiness before deployment at scale, establish human accountability for AI-assisted decisions, and embed an ethics-by-design standard throughout the AI life cycle.",
     highlights: [
       "Trustworthiness validation before scale deployment",
       "Human accountability chains and responsibility mapping",
@@ -98,25 +117,23 @@ export const practiceAreas = [
     id: "conflict-management",
     title: "Conflict Management & Resolution",
     shortTitle: "Conflict Management",
-    summary:
-      "Psychological safety, common language, and resolution strategies — including tensions AI adoption introduces.",
+    summary: "Turn friction into progress with tools that build real psychological safety.",
     description:
-      "We advise senior leaders on developing and implementing conflict resolution and conflict management strategies that ensure psychological safety in the workplace. Our approach begins with an established common language to grow and sustain a work environment of trust and respect — including new tensions that AI adoption can introduce around workload, autonomy, and fairness.",
+      "We advise senior leaders on developing and implementing conflict resolution strategies that ensure psychological safety in the workplace. Our approach begins with an established common language to grow and sustain a work environment of trust and respect — including tensions that change and AI adoption can introduce.",
     highlights: [
       "Conflict resolution and management strategy design",
       "Psychological safety and trust-building frameworks",
       "Education and training on conflict triggers and behaviors",
-      "Navigation of AI-related workplace tensions",
+      "Navigation of workplace tensions during transformation",
     ],
   },
   {
     id: "consultation",
     title: "Consultation & Advisement",
     shortTitle: "Consultation",
-    summary:
-      "One-on-one executive coaching, mentoring, and long-term stakeholder relationships.",
+    summary: "A trusted advisor in your corner: candid counsel, coaching, executive briefings.",
     description:
-      "We believe in the importance of one-on-one consultation and advisement to grapple with the obstacles that impede organizational success. Our seasoned SMEs are adept advisors, mentors, and coaches who offer processes that lead to desired outcomes — including strategic problem-solving, stakeholder engagement, and executive briefings leaders need to lead confidently through AI-driven change.",
+      "We believe in the importance of one-on-one consultation and advisement to grapple with the obstacles that impede organizational success. Our seasoned SMEs are adept advisors, mentors, and coaches — offering strategic problem-solving, stakeholder engagement, and executive briefings leaders need to lead confidently through change.",
     highlights: [
       "Executive coaching and one-on-one advisement",
       "Long-term stakeholder relationship building",
@@ -128,10 +145,9 @@ export const practiceAreas = [
     id: "institutes",
     title: "Institutes & Summits",
     shortTitle: "Institutes & Summits",
-    summary:
-      "Large-scale symposia, interactive sessions, and keynote programming grounded in research.",
+    summary: "Convene, inspire, move — summits that turn big ideas into shared momentum.",
     description:
-      "Our team is recognized for executing large-scale symposia focused on leadership development and inclusion in the workplace. Through collaboration, our institutes and summits offer instruction, interaction, and engagement across every aspect of workplace inclusion and the responsible use of AI — whether face-to-face or virtual, grounded in theory and research evidence.",
+      "Our team is recognized for executing large-scale symposia focused on leadership development and inclusion in the workplace. Through collaboration, our institutes and summits offer instruction, interaction, and engagement — whether face-to-face or virtual, grounded in theory and research evidence.",
     highlights: [
       "Large-scale leadership and inclusion symposia",
       "Interactive session design by expert SMEs",
@@ -141,8 +157,153 @@ export const practiceAreas = [
   },
 ] as const;
 
-/** @deprecated use practiceAreas — kept for gradual migration */
 export const serviceCategories = practiceAreas;
+
+export const solutions = [
+  {
+    title: "Leadership Acceleration",
+    description:
+      "Equip emerging and senior leaders to perform under pressure and lead change with confidence.",
+  },
+  {
+    title: "Organizational Transformation",
+    description:
+      "Redesign how your organization works — structure, culture, and strategy aligned to deliver.",
+  },
+  {
+    title: "Engagement & Inclusion",
+    description:
+      "Build workplaces where people speak up, stay, and do their best work.",
+  },
+  {
+    title: "Strategy & Execution",
+    description:
+      "From plan to progress — clear priorities, real roadmaps, and the measures that keep you on track.",
+  },
+] as const;
+
+export const expertiseAreas = [
+  {
+    title: "Behavioral & Social Science",
+    description: "PhD researchers who read organizations like others read spreadsheets.",
+  },
+  {
+    title: "Strategy & Management",
+    description: "Advisors who've led transformation at national scale.",
+  },
+  {
+    title: "Law & Governance",
+    description: "Specialists in policy, compliance, and accountability.",
+  },
+  {
+    title: "Leadership Development",
+    description: "Coaches who build executives, not slide decks.",
+  },
+] as const;
+
+export const clients = [
+  {
+    name: "Office of Personnel Management",
+    featured: true,
+    summary:
+      "Built the strategy and training that carried Executive Order 13583 across the entire federal workforce — adopted government-wide.",
+  },
+  {
+    name: "Department of Energy",
+    summary:
+      "Convened a government-wide brain trust on engagement and retention in scientific agencies.",
+  },
+  {
+    name: "NASA",
+    summary:
+      "Gave the agency a leadership framework it could measure, backed by a culture survey.",
+  },
+  {
+    name: "Department of Commerce",
+    summary:
+      "Coached leaders to turn avoidance into candor and make collaboration work.",
+  },
+  {
+    name: "Government Accountability Office",
+    summary:
+      "Equipped senior managers to lead change and communicate under scrutiny.",
+  },
+  {
+    name: "Office of the Director of National Intelligence",
+    summary:
+      "Ran high-stakes sessions on equal opportunity and inclusive analysis in a sensitive environment.",
+  },
+  {
+    name: "U.S. Secret Service",
+    summary:
+      "Brought senior agents into candid talks on ethics, communication, and performance.",
+  },
+  {
+    name: "National Institutes of Health — NHLBI",
+    summary:
+      "Authored a five-year roadmap to win the talent war in biomedical research.",
+  },
+  {
+    name: "U.S. Agency for International Development",
+    summary:
+      "Guided the inclusion council through cross-cultural friction with training for a global workforce.",
+  },
+] as const;
+
+export const partners = clients;
+
+export const testimonials = [
+  {
+    quote:
+      "Wilson Partners is the rare firm that is both visionary and exacting. They tell you the truth about where your organization stands — and then help you do something about it.",
+    attribution: "Senior Federal Executive",
+  },
+  {
+    quote:
+      "Wilson Partners gave our leaders a shared language for engagement that outlasted the initiative that started it.",
+    attribution: "Agency Human Capital Leader",
+  },
+  {
+    quote:
+      "They didn't hand us a strategic plan and walk away. WP helped us build the conditions to execute it — and the tools to know it was working.",
+    attribution: "Office of Strategic Planning",
+  },
+] as const;
+
+export const insights = [
+  { category: "Leadership", title: "The Competency of Presence" },
+  { category: "Measurement", title: "Measuring What Matters" },
+  { category: "Strategy", title: "Strategy Is a Sequence of Honest Choices" },
+  { category: "Culture", title: "Trust Is an Operating System" },
+  { category: "Teams", title: "The Common Language of Psychological Safety" },
+  { category: "Performance", title: "Inclusive Excellence as a Performance Strategy" },
+] as const;
+
+export const team = {
+  intro:
+    "No junior consultants reading from a playbook. Our team pairs doctoral-level expertise in sociology, psychology, political science, management science, and law with decades of hands-on experience guiding senior leaders across government and industry. We've solved the problem before — and we bring that hard-won judgment to yours.",
+  leadership: [
+    { name: "Youlanda Gibbons, PhD", role: "Founder & CEO" },
+    { name: "Bob Raleigh, PhD", role: "Pathways Predictive Science" },
+    { name: "Cathleen Benko, MBA", role: "Board Member, NIKE" },
+    { name: "Leslie Hinkson, PhD", role: "League of Conservation Voters" },
+  ],
+  extended:
+    "Brendan Duebner · Neidy Hornsby · Patricia Johnson · Carolyn McMillon · Chrissie Nash · Lionel Scott Jr., PhD · Sandy Shuler · J. Bruce Stewart, PhD · Wanda Watson-Mays",
+  universityPartners: [
+    "Georgetown University",
+    "Cornell University",
+    "Arizona State University",
+  ],
+} as const;
+
+export const foundation = {
+  title: "The Wilson Foundation for the Performing Arts",
+  tagline: "Where our passion for the arts takes flight.",
+  description:
+    "A signature initiative of Wilson Partners — championing arts education and the next generation of performers and creative leaders.",
+  url: "https://www.wfpas.org",
+} as const;
 
 export const leadershipWorkstreams = [
   {
@@ -151,7 +312,7 @@ export const leadershipWorkstreams = [
     problem:
       "Leading an AI-enabled function demands new capabilities: interpreting data, exercising judgment over AI outputs, and guiding teams through new ways of working.",
     action:
-      "Competency models spanning foundational to advanced skills, experiential learning in real work, progressive challenge across tracks, and feedback through IDPs — developing leaders, not just users.",
+      "Competency models spanning foundational to advanced skills, experiential learning in real work, progressive challenge across tracks, and feedback through IDPs.",
     result:
       "Leaders who interpret AI with confidence, exercise sound judgment, and build bench strength that continuously grows AI-capable leadership.",
   },
@@ -161,7 +322,7 @@ export const leadershipWorkstreams = [
     problem:
       "Critical capability concentrated in a single person — with no succession, documentation, or structured way to grow others.",
     action:
-      "Structured knowledge-transfer sessions, plain-language documentation that doubles as development content, and self-service systems that let staff learn independently.",
+      "Structured knowledge-transfer sessions, plain-language documentation, and self-service systems that let staff learn independently.",
     result:
       "Distributed, developable knowledge — key-person dependence falls and succession readiness sustains the function through any personnel change.",
   },
@@ -171,7 +332,7 @@ export const leadershipWorkstreams = [
     problem:
       "Leaders had powerful data but no development in the judgment to use it well — risking over-reliance on tools or reverting to instinct.",
     action:
-      "Plain-language insights, human-in-the-loop standards, validated findings, and forecasting that develops proactive, anticipatory leadership.",
+      "Plain-language insights, human-in-the-loop standards, validated findings, and forecasting that develops proactive leadership.",
     result:
       "A durable, data-fluent leadership culture — leaders who act on evidence rather than defer to any single analyst or tool.",
   },
@@ -192,164 +353,43 @@ export const fcpsFramework = {
     "Lifelong Professional Learning — continuous growth, coaching, and community",
   ],
   domains: [
-    {
-      name: "Human-Centred Mindset",
-      description:
-        "Keeps relationships and judgment central — teaching stays human as AI accelerates recovery.",
-    },
-    {
-      name: "Ethics of AI",
-      description:
-        "Inclusivity, bias mitigation, and privacy — directly targeting persistent equity gaps.",
-    },
-    {
-      name: "AI Foundations & Applications",
-      description:
-        "Practical fluency with AI tools to address unrecovered math and science loss.",
-    },
-    {
-      name: "AI Pedagogy",
-      description:
-        "Personalized, AI-supported instruction that meets rising SOL rigor with timely intervention.",
-    },
-    {
-      name: "AI for Professional Development",
-      description:
-        "Continuous, reflective growth that sustains teacher capacity and confidence.",
-    },
+    { name: "Human-Centred Mindset", description: "Keeps relationships and judgment central as AI accelerates recovery." },
+    { name: "Ethics of AI", description: "Inclusivity, bias mitigation, and privacy — targeting persistent equity gaps." },
+    { name: "AI Foundations & Applications", description: "Practical fluency with AI tools to address unrecovered learning loss." },
+    { name: "AI Pedagogy", description: "Personalized, AI-supported instruction that meets rising rigor with timely intervention." },
+    { name: "AI for Professional Development", description: "Continuous growth that sustains teacher capacity and confidence." },
   ],
   levels: [
-    { name: "Acquire", description: "Foundational AI literacy — understand core concepts and use trusted tools with guidance." },
-    { name: "Deepen", description: "Applied practice — integrate AI into everyday teaching and personalize student learning." },
-    { name: "Create", description: "Innovation & leadership — design new AI-enabled pedagogy and mentor fellow teachers." },
+    { name: "Acquire", description: "Foundational AI literacy with trusted tools and guidance." },
+    { name: "Deepen", description: "Applied practice integrated into everyday teaching." },
+    { name: "Create", description: "Innovation and leadership — design new AI-enabled pedagogy." },
   ],
 } as const;
-
-export const partners = [
-  {
-    name: "Office of Personnel Management",
-    summary:
-      "Advised the Director on Executive Order 13583 — creating innovative strategies and training with Georgetown University's McDonough School of Business.",
-  },
-  {
-    name: "NASA",
-    summary:
-      "Established inclusion strategic framework for Headquarters and Centers; developed agency-wide inclusion measurement survey tool.",
-  },
-  {
-    name: "Department of Commerce",
-    summary:
-      "Advised the inclusion council and evaluated strategic inclusion efforts with the Associate Chief Human Capital Officer.",
-  },
-  {
-    name: "Department of Energy",
-    summary:
-      "Created and advised a strategic thinking group of 23 Chief Inclusion Officers across the federal government.",
-  },
-  {
-    name: "Department of War",
-    summary:
-      "Advises the Office of the Secretary on inclusion policy, EEO workforce development, leadership competency models, and the proposed Center of Excellence.",
-  },
-  {
-    name: "NIH · ODNI · USAID · GAO",
-    summary:
-      "Strategic planning, AI-era leadership development, inclusion governance, and evidence-based training across the federal enterprise.",
-  },
-] as const;
-
-export const team = {
-  leadership: [
-    { name: "Youlanda Gibbons, PhD", role: "Founder & CEO" },
-    { name: "Bob Raleigh, PhD", role: "Founder, Pathways Predictive Science" },
-    { name: "Cathleen Benko, MBA", role: "Board Member, NIKE" },
-    { name: "Leslie Hinkson, PhD", role: "VP National Racial Justice and Equity, League of Conservation Voters" },
-  ],
-  extended:
-    "Brendan Duebner · Neidy Hornsby · Patricia Johnson · Carolyn McMillon · Chrissie Nash · Lionel Scott Jr., PhD · Sandy Shuler · J. Bruce Stewart, PhD · Wanda Watson-Mays",
-  universityPartners: [
-    "Georgetown University",
-    "Cornell University",
-    "Arizona State University",
-  ],
-} as const;
-
-export const recognitions = [
-  "Featured in Forbes Magazine, 2024",
-  "Featured in The Wall Street Journal, 2023",
-  "Fortune 100 Most Powerful Women, 2023",
-  "Stevie Awards — Woman of the Year in Government, 2025 & 2022",
-  "Stevie Awards — Thought Leadership for Government, 2022",
-  "Marquis Who's Who Distinguished Humanitarian Award, 2023",
-  "Women Worth Watching · Profiles in Diversity Journal, 2022",
-  "Author, The Business of Diversity: A View from the Corporate Suite, 2011",
-] as const;
 
 export const homeHighlights = [
   {
-    title: "Value-Based Leadership",
+    title: "Presence",
     description:
-      "We engage leaders who create policies and practices aligned with the values and behaviors that drive innovation and solve complex organizational challenges.",
+      "We work shoulder-to-shoulder with senior leaders — not from the sidelines. Real presence in the rooms where decisions get made.",
   },
   {
-    title: "Human-Centered AI",
+    title: "Strategy",
     description:
-      "AI must strengthen human capacity — keeping human agency, accountability, and inclusion at the center of every AI-enabled decision.",
+      "Evidence-based direction that aligns strategy, culture, and people around what actually moves the needle.",
   },
   {
-    title: "Evidence-Based Practice",
+    title: "Impact",
     description:
-      "Research grounded in sociology, psychology, and organizational science — translated into strategy, governance, and workforce competency.",
+      "We measure success by what changes — clearer decisions, sharper teams, and change that lasts.",
   },
 ] as const;
 
 export const aboutContent = {
-  headline: "Architecting human-centered, AI-capable institutions.",
-  intro:
-    "Dr. Youlanda Gibbons is a nationally recognized thought leader at the convergence of AI governance, federal transformation, and value-based leadership — advising cabinet officials, senior military leaders, and agency directors on AI governance, workforce competency, and organizational transformation.",
-  bio: {
-    name: "Dr. Youlanda Michelle Gibbons, Ph.D.",
-    title: "Founder & CEO · Wilson Partners · Institute for Federal Leadership",
-    paragraphs: [
-      "Visionary scholar-practitioner building human-centered, AI-capable institutions — grounded in sociological research, driven by enduring conviction. Her career spans UMass Amherst and Harvard, through a U.S. Congressional Fellowship and Georgetown professorship, to founding Wilson Partners and the Institute for Federal Leadership.",
-      "She architected multi-workstream federal digital transformation — advancing AI governance aligned to NIST AI RMF, DoW Responsible AI Strategy, and Executive Orders. She designed AI literacy curricula mapped to the DOL AI Literacy Framework, built scalable deployment playbooks, and created EEO Leadership Development Competency Models and JPME Leadership Learning Objectives.",
-      "Her vision has touched every federal department and 75+ agencies nationwide and internationally — including Defense, Commerce, Energy, Health and Human Services, NASA, and Veterans Affairs. Recognized by Forbes, The Wall Street Journal, and Fortune's 100 Most Powerful Women.",
-    ],
-    credentials: [
-      "Ph.D. & M.A., Sociology — University of Massachusetts Amherst",
-      "M.S., Public Health — Harvard University",
-      "M.S.W. — Boston University",
-      "B.A., English & Human Development — Mercer University (cum laude)",
-    ],
-    impact: [
-      { value: "75+", label: "Federal agencies" },
-      { value: "5", label: "Graduate degrees" },
-      { value: "2014", label: "Wilson Partners founded" },
-    ],
-  },
-  values: [
-    {
-      title: "Human-Centered",
-      description: "Technology must serve human capacity — not displace it.",
-    },
-    {
-      title: "Evidence-Based",
-      description: "Grounded in research, sociology, and proven federal practice.",
-    },
-    {
-      title: "Transformative",
-      description: "Enterprise-scale change — from recovery to excellence.",
-    },
-    {
-      title: "Ethical",
-      description: "Responsible AI governance woven into every engagement.",
-    },
-  ],
-  federalAdvisory: [
-    { agency: "Department of War", detail: "AI governance, EEO workforce development, Center of Excellence, and enterprise leadership competency models." },
-    { agency: "OPM", detail: "Executive Order 13583 — OPM Inclusive Excellence Maturity Model with Georgetown McDonough." },
-    { agency: "NASA", detail: "Inclusion strategic framework and agency-wide measurement survey tool." },
-    { agency: "Department of Energy", detail: "Strategic group of 23 Chief Inclusion Officers across the federal government." },
-    { agency: "NIH / NHLBI", detail: "Five-year inclusion strategic implementation plan to transform workplace culture." },
-  ],
+  headline: firmStory.headline,
+  intro: `${firmStory.intro} ${firmStory.closing}`,
+  values: coreValues,
+  federalAdvisory: clients.slice(0, 5).map((c) => ({
+    agency: c.name,
+    detail: c.summary,
+  })),
 } as const;

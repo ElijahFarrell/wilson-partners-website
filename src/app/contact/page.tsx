@@ -20,7 +20,7 @@ export default function ContactPage() {
       <PageIntro
         eyebrow="Get in Touch"
         title="Contact Us"
-        description="Seeking a partner for your next AI initiative, leadership program, or organizational transformation? We'd welcome the opportunity to discuss your goals."
+        description="Seeking a partner for your next initiative? Tell us what you're working on — we'll bring the strategy."
       />
 
       <Section size="large">
@@ -73,18 +73,18 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <dt className="text-xs font-semibold uppercase tracking-[0.18em] text-gold-deep">
-                    Alternate Email
+                    Website
                   </dt>
-                  <dd className="mt-2 min-w-0 break-words">
+                  <dd className="mt-2">
                     <a
-                      href={`mailto:${site.altEmail}`}
+                      href={site.website}
                       className={cn(
                         "text-base font-medium text-ink transition-colors duration-200 hover:text-gold-deep",
                         focusRing,
                         "rounded-sm",
                       )}
                     >
-                      {site.altEmail}
+                      inclusionleadership.org
                     </a>
                   </dd>
                 </div>

@@ -3,6 +3,7 @@ import { ButtonLink } from "@/components/ButtonLink";
 import { FeaturedFramework } from "@/components/FeaturedFramework";
 import { PageIntro } from "@/components/PageIntro";
 import { ServiceBlock } from "@/components/ServiceBlock";
+import { SolutionsSection } from "@/components/SolutionsSection";
 import { Section, SectionContainer } from "@/components/Section";
 import { cn, focusRing } from "@/lib/cn";
 import { leadershipWorkstreams, practiceAreas, site } from "@/lib/content";
@@ -10,22 +11,22 @@ import { leadershipWorkstreams, practiceAreas, site } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Wilson Partners practice areas: AI governance, leadership development, research & analytics, strategic planning, conflict management, executive advisement, and institutes.",
+    "Wilson Partners capabilities: research, leadership development, strategy, governance, conflict management, executive advisement, and institutes.",
 };
 
 export default function ServicesPage() {
   return (
     <>
       <PageIntro
-        eyebrow={site.name}
-        title="Practice Areas"
-        description="WP integrates artificial intelligence across the full span of our knowledge, skills, and abilities. Each practice area pairs deep human expertise with responsible, human-centered AI — spanning research and analytics, leadership development, strategy, governance, and the people-centered work of building trust."
+        eyebrow="What We Do"
+        title="Strategy, Leadership, and the Work That Moves Institutions Forward"
+        description="Everything you need to lead through change — from research and strategy to leadership and culture. Wilson Partners integrates deep human expertise with responsible, human-centered AI across every capability."
         dark
       />
 
       <div className="sticky top-[var(--header-height)] z-30 bg-cream/90 py-4 shadow-[0_8px_24px_rgba(10,15,24,0.04)] backdrop-blur-xl">
         <SectionContainer>
-          <nav aria-label="Practice areas">
+          <nav aria-label="Capabilities">
             <ul className="flex flex-wrap gap-2">
               {practiceAreas.map((area) => (
                 <li key={area.id}>
@@ -59,14 +60,20 @@ export default function ServicesPage() {
 
       <Section className="bg-band-warm">
         <SectionContainer>
-          <FeaturedFramework />
+          <SolutionsSection />
         </SectionContainer>
       </Section>
 
       <Section>
         <SectionContainer>
+          <FeaturedFramework />
+        </SectionContainer>
+      </Section>
+
+      <Section className="bg-band-warm">
+        <SectionContainer>
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-gold-deep">
-            Case Approach
+            Our Approach
           </p>
           <h2 className="text-balance mt-4 font-display text-3xl font-semibold text-ink lg:text-4xl">
             Leadership Development by Workstream
@@ -125,15 +132,14 @@ export default function ServicesPage() {
         <SectionContainer narrow>
           <div className="text-center">
             <h2 className="text-balance font-display text-3xl font-semibold lg:text-4xl">
-              Our Work Is Fueled by Human-Centered Innovation
+              Trusted to Deliver
             </h2>
             <p className="text-pretty mx-auto mt-6 max-w-xl text-lg text-parchment-deep/90">
-              Let&apos;s discuss how our advisory services can support your
-              organization&apos;s AI transformation journey.
+              Tell us what you&apos;re working on — we&apos;ll bring the strategy.
             </p>
             <div className="mt-10 flex flex-wrap justify-center gap-4">
               <ButtonLink href="/about" variant="ghost">
-                Learn About Us
+                About the Firm
               </ButtonLink>
               <ButtonLink href="/contact" variant="gold">
                 Contact Us
