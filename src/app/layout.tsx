@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { SkipLink } from "@/components/SkipLink";
 import { site } from "@/lib/content";
+import { COMING_SOON } from "@/lib/site-mode";
 import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
@@ -22,10 +23,14 @@ const literata = Literata({
 
 export const metadata: Metadata = {
   title: {
-    default: `${site.name} | ${site.tagline}`,
+    default: COMING_SOON
+      ? `${site.name} | Coming Soon`
+      : `${site.name} | ${site.tagline}`,
     template: `%s | ${site.name}`,
   },
-  description: site.description,
+  description: COMING_SOON
+    ? `${site.tagline} — A new Wilson Partners experience is on the way.`
+    : site.description,
   metadataBase: new URL(site.website),
 };
 
@@ -40,12 +45,20 @@ export default function RootLayout({
       className={`${cormorant.variable} ${literata.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">
-        <SkipLink />
-        <Header />
-        <main id="main-content" className="flex-1">
-          {children}
-        </main>
-        <Footer />
+        {COMING_SOON ? (
+          <main id="main-content" className="flex-1">
+            {children}
+          </main>
+        ) : (
+          <>
+            <SkipLink />
+            <Header />
+            <main id="main-content" className="flex-1">
+              {children}
+            </main>
+            <Footer />
+          </>
+        )}
       </body>
     </html>
   );
