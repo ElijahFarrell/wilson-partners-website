@@ -9,7 +9,7 @@ export function middleware(request: NextRequest) {
 
   const { pathname } = request.nextUrl;
 
-  if (pathname === "/" || pathname.startsWith("/_next") || pathname.includes(".")) {
+  if (pathname === "/" || pathname.startsWith("/api") || pathname.startsWith("/_next") || pathname.includes(".")) {
     return NextResponse.next();
   }
 

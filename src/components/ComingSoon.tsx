@@ -1,4 +1,4 @@
-import { cn, focusRing } from "@/lib/cn";
+import { InterestForm } from "@/components/InterestForm";
 import { site } from "@/lib/content";
 
 const CURRENT_YEAR = 2026;
@@ -50,19 +50,11 @@ export function ComingSoon() {
           {site.tagline}
         </p>
         <p className="text-pretty animate-rise-in animate-delay-3 mx-auto mt-4 max-w-md text-base leading-relaxed text-parchment-deep/70">
-          We&apos;re refining the details. In the meantime, reach out — we&apos;d
-          love to hear what you&apos;re working on.
+          We&apos;re refining the details. Leave your email and we&apos;ll know
+          you stopped by.
         </p>
 
-        <a
-          href={`mailto:${site.email}`}
-          className={cn(
-            "animate-rise-in animate-delay-4 mt-12 inline-flex items-center justify-center rounded-full bg-gold px-8 py-3.5 text-sm font-semibold text-ink transition-[transform,background-color] duration-200 hover:bg-gold-light",
-            focusRing,
-          )}
-        >
-          {site.email}
-        </a>
+        <InterestForm />
       </div>
 
       <p className="relative pb-10 text-center text-xs text-parchment-deep/40">
