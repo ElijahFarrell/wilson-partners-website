@@ -20,7 +20,7 @@ export default function ContactPage() {
       <PageIntro
         eyebrow="Get in Touch"
         title="Contact Us"
-        description="Seeking a partner for your next initiative? Tell us what you're working on — we'll bring the strategy."
+        description="Seeking a partner for your next initiative? Tell us what you're working on. We'll bring the strategy."
       />
 
       <Section size="large">

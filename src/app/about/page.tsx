@@ -20,7 +20,7 @@ import {
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Wilson Partners is a strategic consulting firm for leaders who refuse to settle — aligning strategy, culture, and people across government and enterprise.",
+    "Wilson Partners is a strategic consulting firm for leaders who refuse to settle, aligning strategy, culture, and people across government and enterprise.",
 };
 
 export default function AboutPage() {
@@ -192,7 +192,7 @@ export default function AboutPage() {
               <span translate="no">{site.name}</span>
             </h2>
             <p className="text-pretty mx-auto mt-5 max-w-xl text-ink-muted">
-              Tell us what you&apos;re working on — we&apos;ll bring the strategy.
+              Tell us what you&apos;re working on. We&apos;ll bring the strategy.
             </p>
             <div className="mt-10">
               <ButtonLink href="/contact">Start a Conversation</ButtonLink>

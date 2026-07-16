@@ -70,7 +70,7 @@ export function CurveIntoLight() {
   );
 }
 
-/** Elevated panel that overlaps the section above — premium consulting pattern */
+/** Elevated panel that overlaps the section above (premium consulting pattern) */
 export function ElevatedPanel({
   children,
   className,

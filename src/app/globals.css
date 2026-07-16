@@ -77,7 +77,7 @@
   text-wrap: pretty;
 }
 
-/* Ambient hero mesh — depth without choppy section breaks */
+/* Ambient hero mesh: depth without choppy section breaks */
 .hero-mesh {
   background:
     radial-gradient(ellipse 80% 60% at 70% 20%, rgba(196, 160, 53, 0.14), transparent 55%),
@@ -171,7 +171,7 @@
   box-shadow: 0 0 0 3px rgba(196, 160, 53, 0.22);
 }
 
-/* Soft gradient band — replaces hard section borders */
+/* Soft gradient band: replaces hard section borders */
 .bg-band-warm {
   background: linear-gradient(
     180deg,

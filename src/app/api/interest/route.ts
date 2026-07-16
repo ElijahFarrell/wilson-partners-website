@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-/** In-memory stash for this server instance — replace with a real store later. */
+/** In-memory stash for this server instance. Replace with a real store later. */
 const pendingEmails = new Set<string>();
 
 export async function POST(request: Request) {

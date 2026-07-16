@@ -44,7 +44,7 @@ export function InterestForm() {
         role="status"
         className="mt-12 rounded-2xl border border-gold/30 bg-white/5 px-6 py-5 text-base text-parchment-deep/90 backdrop-blur-sm"
       >
-        Thanks — we got it. We&apos;ll be in touch.
+        Thanks. We got it. We&apos;ll be in touch.
       </p>
     );
   }

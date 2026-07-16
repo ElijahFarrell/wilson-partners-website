@@ -189,7 +189,7 @@ export function HomePage() {
               Let&apos;s Build Something That Lasts
             </h2>
             <p className="text-pretty mx-auto mt-6 max-w-xl text-lg leading-relaxed text-parchment-deep/90">
-              Tell us what you&apos;re working on — we&apos;ll bring the strategy.
+              Tell us what you&apos;re working on. We&apos;ll bring the strategy.
             </p>
             <div className="mt-10 flex flex-wrap justify-center gap-4">
               <ButtonLink href="/contact" variant="gold">

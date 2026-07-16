@@ -23,7 +23,7 @@ export function TestimonialsSection() {
               &ldquo;{item.quote}&rdquo;
             </p>
             <footer className="mt-6 text-sm font-semibold text-ink">
-              — {item.attribution}
+              {item.attribution}
             </footer>
           </blockquote>
         ))}

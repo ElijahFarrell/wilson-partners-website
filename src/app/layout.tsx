@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     template: `%s | ${site.name}`,
   },
   description: COMING_SOON
-    ? `${site.tagline} — A new Wilson Partners experience is on the way.`
+    ? `${site.tagline} Our new site is on the way.`
     : site.description,
   metadataBase: new URL(site.website),
 };

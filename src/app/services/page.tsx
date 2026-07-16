@@ -20,7 +20,7 @@ export default function ServicesPage() {
       <PageIntro
         eyebrow="What We Do"
         title="Strategy, Leadership, and the Work That Moves Institutions Forward"
-        description="Everything you need to lead through change — from research and strategy to leadership and culture. Wilson Partners integrates deep human expertise with responsible, human-centered AI across every capability."
+        description="Everything you need to lead through change, from research and strategy to leadership and culture. Wilson Partners integrates deep human expertise with responsible, human-centered AI across every capability."
         dark
       />
 
@@ -135,7 +135,7 @@ export default function ServicesPage() {
               Trusted to Deliver
             </h2>
             <p className="text-pretty mx-auto mt-6 max-w-xl text-lg text-parchment-deep/90">
-              Tell us what you&apos;re working on — we&apos;ll bring the strategy.
+              Tell us what you&apos;re working on. We&apos;ll bring the strategy.
             </p>
             <div className="mt-10 flex flex-wrap justify-center gap-4">
               <ButtonLink href="/about" variant="ghost">
